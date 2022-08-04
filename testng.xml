@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name = "TestNGListeners.TestListener"></listener>
+    </listeners>
+    <parameter name="browser"  value="chrome"></parameter>
+    <test verbose="2" name="Page Factory Demo"  thread-count="8" parallel="classes">
+        <classes>
+            <class name="com.pagefact.tests.WebTests.SingOnTwo"/>
+<!--            <class name="com.pagefact.tests.SignUpOnLTTest">-->
+<!--                <methods>-->
+<!--                    <include name="duplicateTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
